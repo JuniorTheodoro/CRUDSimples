@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUD Simples</title>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modalLabel">Excluir Cliente</h4>
+                </div>
+                <div class="modal-body">
+                    Deseja realmente excluir este cliente?
+     
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Sim</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">C R U D (clientes)</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/cadastro">Cadastrar</a></li>
+                    <li><a href="/pesquisar">Pesquisar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main" class="container-fluid">
+        <h3 class="page-header">Visualizar Cliente</h3>
+
+        <div class="row">
+            <div class="col-md-4">
+                <p><strong>Cód. Cliente</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Data de Cadastro</strong></p>
+                <p>Lorem ipsum dolor</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Nome</strong></p>
+                <p>123.456.789-0</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>CPF/CNPJ</strong></p>
+                <p>In vel sollicitudin leo, id fermentum augue.</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Inscrição Estadual</strong></p>
+                <p>(00) 234-5678</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Email</strong></p>
+                <p>Nullam ultrices elit ante.</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Telefone</strong></p>
+                <p>Integer finibus in ligula vitae aliquet.</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Celular</strong></p>
+                <p>Jes</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Bloqueado</strong></p>
+                <p>Lundo, Merkredo, Vendredo</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Logradouro</strong></p>
+                <p>Integer finibus in ligula vitae aliquet.</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Bairro</strong></p>
+                <p>Jes</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Complemento</strong></p>
+                <p>Lundo, Merkredo, Vendredo</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Cidade</strong></p>
+                <p>Integer finibus in ligula vitae aliquet.</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>Uf</strong></p>
+                <p>Jes</p>
+            </div>
+
+            <div class="col-md-4">
+                <p><strong>CEP</strong></p>
+                <p>Lundo, Merkredo, Vendredo</p>
+            </div>
+
+            <div class="col-md-8">
+                <p><strong>Observações</strong></p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+	  In bibendum nunc urna, at vestibulum neque pellentesque eget. 
+	  Maecenas lacinia velit ante, vitae fermentum ex interdum et. 
+	  In vel sollicitudin leo, id fermentum augue.
+                </p>
+            </div>
+        </div>
+
+        <hr />
+        <div id="actions" class="row">
+            <div class="col-md-12">
+                <a href="/" class="btn btn-primary">Fechar</a>
+                <a href="/editar" class="btn btn-default">Editar</a>
+                <a href="#" class="btn btn-default" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
